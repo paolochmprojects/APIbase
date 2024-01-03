@@ -1,0 +1,27 @@
+{
+  "name": "odontproapi",
+  "version": "0.0.1",
+  "description": "API for OdontProAPP",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paolo Charca M.",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.7.1",
+    "bcrypt": "5.1.1",
+    "dotenv": "^16.3.1",
+    "express": "4.18.2",
+    "joi": "17.11.0",
+    "jsonwebtoken": "9.0.2",
+    "morgan": "1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "prisma": "^5.7.1"
+  }
+}
