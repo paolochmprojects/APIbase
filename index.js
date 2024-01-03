@@ -6,8 +6,7 @@ import morgan from "morgan";
 const app = express();
 
 app.use(express.json()); // parse JSON bodies
-
-app.use(morgan("dev")); // log requests
+app.use(morgan(settings.MORGAN_LOGGING_FORMAT)); // log requests
 
 // main router
 app.use("/api", router);
