@@ -13,7 +13,6 @@ export const verifyToken = async (req, res, next) => {
         const { password: _, ...user} = userDB
         req.user = user
     } catch (error) {
-        console.log(error)
         return res.status(403).json({ "error": "Token invalid" })
     }
     next()
