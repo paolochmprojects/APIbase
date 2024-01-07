@@ -3,6 +3,9 @@ import db from '../database.js'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 
+// generate a open comment for the swagger docs
+
+
 const registerUser = async (req, res) => {
     const { password, repassword } = await req.body
     if (password !== repassword) return res.status(400).json({ "error": "Passwords do not match" })
